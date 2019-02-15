@@ -2,12 +2,9 @@ package frds.mgnt.service;
 
 public class FriendRuntimeException extends RuntimeException {
 
-    /**
-	 * serialVersionUID
-	 */
-	private static final long serialVersionUID = 2400440907480484973L;
+    private static final long serialVersionUID = 5274619513717975470L;
 
-	public FriendRuntimeException(String message) {
+    public FriendRuntimeException(String message) {
         super(message);
     }
 

@@ -8,15 +8,8 @@ import org.springframework.context.annotation.Bean;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 
-@SpringBootApplication//(exclude={DataSourceAutoConfiguration.class})
+@SpringBootApplication
 public class FriendsManagementApplication {
-
-	  @Bean
-	    public Jackson2ObjectMapperBuilderCustomizer jacksonCustomizer() {
-	        return builder -> {
-	            builder.serializationInclusion(JsonInclude.Include.NON_NULL);
-	        };
-	    }
 
 	public static void main(String[] args) {
 		SpringApplication.run(FriendsManagementApplication.class, args);
@@ -25,4 +18,3 @@ public class FriendsManagementApplication {
 	}
 
 }
-

@@ -4,8 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import frds.mgnt.dao.ProfileRepository;
 import frds.mgnt.model.ProfileEntity;
+import frds.mgnt.model.ProfileRepository;
 
 @Service
 @Transactional
@@ -16,7 +16,8 @@ public class ProfileService{
 	
 	public ProfileEntity createProfile(ProfileEntity profileEntity)
 	{
-		return profileRepository.save(profileEntity);
+		 profileRepository.save(profileEntity);
+		 return profileEntity;
 	}
 
 }
